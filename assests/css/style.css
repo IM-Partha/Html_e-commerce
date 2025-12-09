@@ -11,7 +11,9 @@
   --secoundary-color: #000000;
   --primary-btn: #db4444;
 }
-html, body {
+
+html,
+body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
@@ -111,6 +113,7 @@ a {
 
 /* Icons */
 .right-icons {
+  position: relative;
   gap: 20px;
 }
 
@@ -121,6 +124,47 @@ a {
 
 .right-icons i:hover {
   color: #ff4c4c;
+}
+
+.right-icons .account-box  {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 12rem;
+  background-color: #9e9a9f;
+  color: white;
+  padding: 22px;
+  width: 13rem;
+  border-radius: 4px;
+  line-height: 11px;
+}
+.account-box.active {
+  display: block !important;
+}
+.right-icons .accountSection-one,
+.accountSection-two,
+.accountSection-three,
+.accountSection-four,
+.accountSection-five {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.right-icons .accountSection-one i,
+.right-icons .accountSection-two i,
+.right-icons .accountSection-three i,
+.right-icons .accountSection-four i,
+.right-icons .accountSection-five i {
+  font-size: 16px;
+}
+
+.right-icons .accountSection-one p,
+.right-icons .accountSection-two p,
+.right-icons .accountSection-three p,
+.right-icons .accountSection-four p,
+.right-icons .accountSection-five p {
+  font-size: 10px;
 }
 
 /* Hero section */
@@ -870,4 +914,543 @@ small {
 .footer-bottom p {
   font-size: 13px;
   color: #aaa;
+}
+
+
+
+/* Login Page */
+
+.login-page {
+  margin-top: 50px;
+}
+
+.side-image img {}
+
+.right-side-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side-main h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.right-side-main p {
+  font-size: 15px;
+}
+
+.right-side-main .input-filed {
+  gap: 30px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side-main input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.right-side-main .form-login {
+  margin-top: 40px;
+}
+
+.right-side-main .btn-four {
+  margin-top: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 7rem;
+}
+
+.right-side-main .btn-five .btn-one {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  gap: 10px;
+}
+
+.right-side-main .btn-five .btn-create-account {
+  background-color: var(--primary-btn);
+  color: white;
+  padding: 10px 9px;
+  border: none;
+  border-radius: 4px
+}
+
+.right-side-main .btn-five .login-with-google {
+
+  color: black;
+  padding: 10px 9px;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+}
+
+.right-side-main .btn-five .login-with-google i {
+  position: absolute;
+  left: 50px;
+  top: 11px;
+  font-size: 18px;
+}
+
+.right-side-main .btn-five .account {
+  margin-left: 2.5rem;
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+.right-side-main .btn-five .account p {
+  color: #9c9c9c;
+  font-size: 15px;
+}
+
+.right-side-main .btn-five .account a {
+  color: black;
+  font-size: 15px;
+}
+
+.right-side-main .btn-four button {
+  background-color: var(--primary-btn);
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 11px 37px;
+  border-radius: 4px;
+}
+
+.right-side-main .btn-four button::placeholder {
+  color: #cecece;
+}
+
+.right-side-main .btn-four a {
+  color: var(--primary-btn);
+
+}
+
+
+
+
+
+
+/* About Section */
+
+.about-section .row {
+  display: flex;
+  align-items: center;
+}
+
+.about-section .about-container {}
+
+.about-section .about-container .about-main {}
+
+.about-section .about-container .about-main h2 {
+  font-size: 54px;
+}
+
+.about-section .about-container .about-main .para-1 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.about-section .about-container .about-main .para-2 {
+  margin-top: 2rem;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.categories-two .categories-main .background-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.categories-two .categories-main .background {
+  width: 21rem;
+  height: 14rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.categories-two .categories-main .background:hover {
+  background-color: var(--primary-btn);
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.categories-two .categories-main,
+.fa-mobile-screen-button,
+.fa-mobile-screen-button,
+.fa-clock,
+.fa-camera,
+.fa-headphones {
+  font-size: 56px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.categories-two .categories-main .categories-para {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.categories-two .categories-main .categories-para-two {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.categories-two .product-btn-two button {
+  background-color: var(--primary-btn);
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 5px;
+}
+
+
+.categories-two .red-bar {
+
+  width: 20px;
+  height: 40px;
+  background-color: #e63946;
+  /* red shade */
+  border-radius: 3px;
+}
+
+
+.feedback .feedback-main img {
+  background-color: #f5f5f5;
+  height: 20rem;
+  width: 16rem;
+}
+
+.feedback .feedbak-text h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.feedback .feedbak-text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.feedback .scocial_links {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+/* wishlist */
+.wishlist .product-btn-two button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 16px 48px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.wishlist .container-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Discount label */
+.wishlist .product-card .d-flex .discount {
+  color: white;
+  font-weight: 300;
+  background-color: #db4444;
+  padding: 4px 11px;
+  border-radius: 5px;
+}
+
+/* Image styling */
+.wishlist .product-card .img-fluid {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Product background box */
+.wishlist .product-card .background {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 16rem;
+  margin-bottom: 12px;
+  height: 16rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Heart icon size */
+.wishlist .product-card .d-flex .fa-heart {
+  font-size: 20px;
+}
+
+/* Product title */
+.wishlist .product-description h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Product price */
+.wishlist .product-description .price {
+  display: flex;
+  color: #dd4e4e;
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Add to Cart button container (hidden by default) */
+.wishlist .product-card .add-to-cart {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button design */
+.wishlist .product-card .add-to-cart button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.wishlist .product-card .background:hover img {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.wishlist .product-card .background:hover .add-to-cart {
+  bottom: 0;
+}
+
+.wishlist .product-card .background:hover .add-to-cart button {
+  opacity: 1;
+}
+
+.viewallproducts {
+  background-color: var(--primary-btn);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewallproducts:hover {
+  background-color: #c73333;
+}
+
+/* Just For You */
+
+.justforyou .just {
+  font-size: 18px;
+}
+
+.justforyou .product-btn-two button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 16px 48px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.justforyou .container-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Discount label */
+.justforyou .product-card .d-flex .discount {
+  color: white;
+  font-weight: 300;
+  background-color: #db4444;
+  padding: 4px 11px;
+  border-radius: 5px;
+}
+
+/* Image styling */
+.justforyou .product-card .img-fluid {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Product background box */
+.justforyou .product-card .background {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 16rem;
+  margin-bottom: 12px;
+  height: 16rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.justforyou .product-card .background .no-offer span {
+  background-color: transparent;
+}
+
+.wishlist .product-card .background .no-offer span {
+  background-color: transparent;
+}
+
+/* Heart icon size */
+.justforyou .product-card .d-flex .fa-heart {
+  font-size: 20px;
+}
+
+/* Product title */
+.justforyou .product-description h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Product price */
+.justforyou .product-description .price {
+  display: flex;
+  color: #dd4e4e;
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Add to Cart button container (hidden by default) */
+.justforyou .product-card .add-to-cart {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button design */
+.justforyou .product-card .add-to-cart button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.justforyou .product-card .background:hover img {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.justforyou .product-card .background:hover .add-to-cart {
+  bottom: 0;
+}
+
+.justforyou .product-card .background:hover .add-to-cart button {
+  opacity: 1;
+}
+
+.viewallproducts {
+  background-color: var(--primary-btn);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewallproducts:hover {
+  background-color: #c73333;
+}
+
+
+
+
+/* 404 Page */
+
+.not-found {}
+
+.not-found .not-found-content {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not-found .not-found-content h1 {
+  font-size: 110px;
+}
+
+.not-found .not-found-content p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.not-found .not-found-content button {
+  margin-top: 40px;
+  background-color: var(--primary-btn);
+  color: white;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }

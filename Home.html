@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+  <!-- Top Navbar -->
   <section class="top-navbar  bg-black">
     <div class="row">
       <div class="container-fluid ">
@@ -37,7 +37,7 @@
       </div>
     </div>
   </section>
-  <!-- Top Navbar -->
+  <!--Navbar -->
   <section class="navbar-section py-3">
     <div class="container-fluid d-flex align-items-center justify-content-between ">
       <!-- Left -->
@@ -54,10 +54,10 @@
 
       <!-- Middle -->
       <ul class="nav-menu align-items-center list-unstyled mb-0 gap-4 " id="navBar">
-        <li><a href="#">Home</a></li>
+        <li><a href="/Home.html">Home</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="/About.htm">About</a></li>
+        <li><a href="./Register.htm">Sign Up</a></li>
       </ul>
 
       <!-- Right -->
@@ -66,8 +66,33 @@
           <input type="text" class="form-control" placeholder="What are you looking for?" />
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
-        <i class="fa-regular fa-heart"></i>
+        <a href="./Wishlist.html">
+          <i class="fa-regular fa-heart"></i>
+        </a>
         <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user" id="userIcon"></i>
+        <div id="accountSection" class="account-box">
+          <div class="accountSection-one">
+            <i class="fa-solid fa-user" id="userIcon-two"></i>
+            <p class="username">Manage My Account</p>
+          </div>
+          <div class="accountSection-two">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="username">My Order</p>
+          </div>
+          <div class="accountSection-three">
+            <i class="fa-solid fa-ban"></i>
+            <p class="username">My Cancellations</p>
+          </div>
+          <div class="accountSection-four">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <p class="username">My Reviews</p>
+          </div>
+          <div class="accountSection-five">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p class="username">Lout Out</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -894,72 +919,72 @@
 
   <!-- Footer -->
 
-<footer class="footer">
-  <div class="container">
-    <div class="row footer-content">
-      <!-- Exclusive -->
-      <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
-        <h4>Exclusive</h4>
-        <h5>Subscribe</h5>
-        <p class="para-one">Get 10% off your first order</p>
-        <div class="inputfiled">
-          <input type="text" placeholder="Enter your email" />
-          <i class="fa-solid fa-paper-plane"></i>
-        </div>
-      </div>
-
-      <!-- Support -->
-      <div class="col-lg-3 col-md-4 col-sm-6 footer-col">
-        <h4>Support</h4>
-        <p>111 Bijoy Sarani, Dhaka,<br> DH 1515, Bangladesh.</p>
-        <p>exclusive@gmail.com</p>
-        <p>+88015-88888-9999</p>
-      </div>
-
-      <!-- Account -->
-      <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
-        <h4>Account</h4>
-        <p>My Account</p>
-        <p>Login / Register</p>
-        <p>Cart</p>
-        <p>Wishlist</p>
-        <p>Shop</p>
-      </div>
-
-      <!-- Quick Link -->
-      <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
-        <h4>Quick Link</h4>
-        <p>Privacy Policy</p>
-        <p>Terms Of Use</p>
-        <p>FAQ</p>
-        <p>Contact</p>
-      </div>
-
-      <!-- Download App -->
-      <div class="col-lg-3 col-md-4 col-sm-6 footer-col">
-        <h4>Download App</h4>
-        <p>Save $3 with App New User Only</p>
-        <div class="app-box">
-          <img src="https://i.ibb.co/4P9J7zG/qr-code.png" alt="QR Code" class="qr">
-          <div class="app-buttons">
-            <img src="https://i.ibb.co/vk4m1Jv/googleplay.png" alt="Google Play" class="app-img">
-            <img src="https://i.ibb.co/vJBdJ1s/appstore.png" alt="App Store" class="app-img">
+  <footer class="footer">
+    <div class="container">
+      <div class="row footer-content">
+        <!-- Exclusive -->
+        <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+          <h4>Exclusive</h4>
+          <h5>Subscribe</h5>
+          <p class="para-one">Get 10% off your first order</p>
+          <div class="inputfiled">
+            <input type="text" placeholder="Enter your email" />
+            <i class="fa-solid fa-paper-plane"></i>
           </div>
         </div>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
+
+        <!-- Support -->
+        <div class="col-lg-3 col-md-4 col-sm-6 footer-col">
+          <h4>Support</h4>
+          <p>111 Bijoy Sarani, Dhaka,<br> DH 1515, Bangladesh.</p>
+          <p>exclusive@gmail.com</p>
+          <p>+88015-88888-9999</p>
+        </div>
+
+        <!-- Account -->
+        <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+          <h4>Account</h4>
+          <p>My Account</p>
+          <p>Login / Register</p>
+          <p>Cart</p>
+          <p>Wishlist</p>
+          <p>Shop</p>
+        </div>
+
+        <!-- Quick Link -->
+        <div class="col-lg-2 col-md-4 col-sm-6 footer-col">
+          <h4>Quick Link</h4>
+          <p>Privacy Policy</p>
+          <p>Terms Of Use</p>
+          <p>FAQ</p>
+          <p>Contact</p>
+        </div>
+
+        <!-- Download App -->
+        <div class="col-lg-3 col-md-4 col-sm-6 footer-col">
+          <h4>Download App</h4>
+          <p>Save $3 with App New User Only</p>
+          <div class="app-box">
+            <img src="https://i.ibb.co/4P9J7zG/qr-code.png" alt="QR Code" class="qr">
+            <div class="app-buttons">
+              <img src="https://i.ibb.co/vk4m1Jv/googleplay.png" alt="Google Play" class="app-img">
+              <img src="https://i.ibb.co/vJBdJ1s/appstore.png" alt="App Store" class="app-img">
+            </div>
+          </div>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <p>© Copyright Rimel 2022. All rights reserved</p>
+      <div class="footer-bottom">
+        <p>© Copyright Rimel 2022. All rights reserved</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 
